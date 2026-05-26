@@ -6,7 +6,7 @@ Se podrían aplicar todas porque ninguna requiere saber la totalidad de la lista
 > endulzar platinum \
 > salar platinum \
 > sarSabor platinum \
-> duplicarPorcion platinum \
+> duplicarPorcion platinum 
 
 Esto sucede porque todas estas funciones devuelven un plato, y en este caso los ingrendientes del plato son infinitos.
 Y por último, "simplificar" no se puede aplicar porque utilicé length en el desarrollo de la función, lo que requiere recorrer sí o sí la lista y produciría un error.
