@@ -148,7 +148,7 @@ platinum = Plato {
     componentes = infinitosComponentesMisteriosos}
 
 
- -- Plato y participantes para pruebas 
+ -- Platos y participantes para pruebas 
 
 platoTest :: Plato
 platoTest = Plato { dificultad = 6 , componentes = [Componente { ingrediente = "Carne", gramos = 200 }, Componente { ingrediente = "Harina", gramos = 50 }]}
@@ -173,7 +173,6 @@ platoEnsalada = Plato { dificultad = 4 , componentes= [Componente { ingrediente 
 platoTarta :: Plato
 platoTarta = Plato { dificultad = 8, componentes = [Componente { ingrediente = "Queso", gramos = 150 }, Componente {ingrediente= "Queso", gramos= 100}]}
 
--- Los dos nuevos participantes
 participante3 :: Participante
 participante3 = Participante {nombre = "Juana", trucos = [salar 1] , plato = platoEnsalada}
 
