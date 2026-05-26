@@ -64,7 +64,7 @@ limpiarComponentesMenoresA :: Number -> Plato -> Plato
 limpiarComponentesMenoresA unNumero unPlato = unPlato{componentes = filter (mayoresA unNumero) (componentes unPlato)}
 
 mayoresA :: Number ->  Componente -> Bool
-mayoresA unNumero unComponente = gramos unComponente > unNumero
+mayoresA unNumero unComponente = gramos unComponente >= unNumero
 
 -- Info de los platos
 
@@ -147,3 +147,38 @@ platinum = Plato {
     dificultad=10, 
     componentes = infinitosComponentesMisteriosos}
 
+
+ -- Plato y participantes para pruebas 
+
+platoTest :: Plato
+platoTest = Plato { dificultad = 6 , componentes = [Componente { ingrediente = "Carne", gramos = 200 }, Componente { ingrediente = "Harina", gramos = 50 }]}
+
+platoDificil :: Plato
+platoDificil = Plato { dificultad = 9  , componentes= [Componente { ingrediente = "A", gramos = 5 }, Componente { ingrediente = "B", gramos = 5 }, 
+Componente { ingrediente = "C", gramos = 10} , Componente { ingrediente = "D", gramos = 5 },
+Componente{ingrediente = "D", gramos = 5 }, Componente{ingrediente = "E", gramos = 5 }, Componente{ingrediente = "F", gramos = 11 }]}
+
+participante1 :: Participante
+participante1= Participante { nombre = "Pepe", trucos = [endulzar 5, salar 2], plato = platoTest }
+
+plato2 :: Plato
+plato2 = Plato { dificultad = 10, componentes = [Componente { ingrediente = "Lechuga", gramos = 50 }]}
+
+participante2 :: Participante
+participante2 = Participante { nombre = "Ana", trucos = [salar 1], plato = plato2 }
+
+platoEnsalada :: Plato
+platoEnsalada = Plato { dificultad = 4 , componentes= [Componente { ingrediente = "Lechuga", gramos = 100 }, Componente { ingrediente = "Tomate", gramos = 50 }]}
+
+platoTarta :: Plato
+platoTarta = Plato { dificultad = 8, componentes = [Componente { ingrediente = "Queso", gramos = 150 }, Componente {ingrediente= "Queso", gramos= 100}]}
+
+-- Los dos nuevos participantes
+participante3 :: Participante
+participante3 = Participante {nombre = "Juana", trucos = [salar 1] , plato = platoEnsalada}
+
+participante4 :: Participante
+participante4 = Participante{ nombre= "Carlos" , trucos = [duplicarPorcion, endulzar 2], plato= platoTarta}
+
+listaParticipantes :: [Participante]
+listaParticipantes = [pepeRoccino, participante1,participante3,participante4]
