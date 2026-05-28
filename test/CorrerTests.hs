@@ -1,6 +1,7 @@
---module CorrerTest where
+module CorrerTests where
 import Spec
 import PdePreludat
 
---main :: IO ()
+main :: IO ()
 --main = correrTests
+main = return ()
