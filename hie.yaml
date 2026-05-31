@@ -1,7 +1,7 @@
 cradle:
   stack:
     - path: "./src"
-      component: "haskell:lib"
+      component: "tp-haskell-chef:lib"
 
     - path: "./test"
-      component: "haskell:test:haskell-test"
+      component: "tp-haskell-chef:test:haskell-test"
