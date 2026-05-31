@@ -1,8 +1,5 @@
 module Library where
 import PdePreludat
-import Foreign (Int)
-import GHC.Base (Float)
-import Test.Hspec (xcontext)
 
 data Participante = Participante {
     nombre :: String,

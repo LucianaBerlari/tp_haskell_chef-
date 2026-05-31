@@ -8,3 +8,4 @@ import Test.Hspec
   --describe "Test de ejemplo" $ do
   --  it "El pdepreludat se instaló correctamente" $ do
  --     doble 1 `shouldBe` 2
+

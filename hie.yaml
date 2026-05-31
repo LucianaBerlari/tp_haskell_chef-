@@ -1,7 +1,7 @@
 cradle:
   stack:
     - path: "./src"
-      component: "nuevoProyecto:lib"
+      component: "haskell:lib"
 
     - path: "./test"
-      component: "nuevoProyecto:test:nuevoProyecto-test"
+      component: "haskell:test:haskell-test"

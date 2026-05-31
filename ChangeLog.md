@@ -1,3 +1,3 @@
-# Changelog for nuevoProyecto
+# Changelog for haskell
 
 ## Unreleased changes
