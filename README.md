@@ -12,9 +12,9 @@ Esto sucede porque todas estas funciones devuelven un plato, y en este caso los 
 Y por último, "simplificar" no se puede aplicar porque utilicé length en el desarrollo de la función, lo que requiere recorrer sí o sí la lista y produciría un error.
 
 ### ¿Cuáles de las preguntas de la parte B se pueden hacer sobre Platinum?
-Se puede "noAptoHipertensión" porque no requieren recorrer toda la lista como con "esVegano" y "esSinTacc" y "esComplejo". Las dos primeras las reccoren para verificar en toda la lista si se encuentra el elemento que buscan y la ultima utiliza length
-(misma aclaración para "noAptoHipertensión" que con las funciones de la parte A respecto a como llamar por consola)
-Aclaracion para "noAptoHipertensión": se va a colgar si no encuntra el  componente "Sal", pero si lo encuentra el filter va a devolver una lista con ese elemento
+Se puede "noAptoHipertensión" porque no requieren recorrer toda la lista como con "esVegano" y "esSinTacc" y "esComplejo". Las dos primeras las recorren para verificar en toda la lista si se encuentra el elemento que buscan y la última utiliza length
+(misma aclaración para "noAptoHipertensión" que con las funciones de la parte A respecto a cómo llamar por consola).
+Aclaración para "noAptoHipertensión": se va a colgar si no encuentra el componente "Sal", pero si lo encuentra el filter va a devolver una lista con ese elemento.
 
 ### ¿Se puede saber si el Platinum es mejor que otro plato?
 No, porque no se puede saber la suma total de los infinitos componentes.
